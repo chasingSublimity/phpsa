@@ -47,7 +47,7 @@ class Casts implements AnalyzerPassInterface
         if ($castType === $exprType) {
             $context->notice(
                 'stupid.cast',
-                sprintf("You are trying to cast '%s' to '%s'.", $typeName, $typeName),
+                sprintf("You are trying to cast '%s' to '%s'", $typeName, $typeName),
                 $expr
             );
             return true;
